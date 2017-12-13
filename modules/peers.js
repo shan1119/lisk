@@ -597,7 +597,7 @@ Peers.prototype.onPeersReady = function () {
 		});
 	}
 	// Loop in 10sec intervals (5sec + 5sec connect timeout from pingPeer)
-	jobsQueue.register('peersDiscoveryAndUpdate', peersDiscoveryAndUpdate, 60000);
+	jobsQueue.register('peersDiscoveryAndUpdate', peersDiscoveryAndUpdate, 2000);
 };
 
 /**
